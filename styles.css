@@ -21,3 +21,24 @@ body {
   margin: 0;
   background: #222;
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #f2f2f2;
+}
+
+.btn {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 50%;
+  color: #074191f8;
+  background: #2e8ecdc4;
+}
