@@ -32,7 +32,7 @@ body {
   height: 30rem;
   border: none;
   border-radius: 0.5rem;
-  background: #333;
+  background: #384b70;
 }
 
 .content {
@@ -45,14 +45,24 @@ body {
   font-size: 4rem;
   border: none;
   border-radius: 0.5rem;
-  background: #f2f2f2;
+  background: #fcfaee;
 }
 
 .btn {
-  width: 5rem;
-  height: 5rem;
-  border: none;
+  width: 6rem;
+  height: 6rem;
+  border: solid 0.18rem;
   border-radius: 50%;
+  cursor: pointer;
   color: #f2f2f2;
-  background: #2e8ecdc4;
+  font-size: medium;
+  background: red;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn:active {
+  transform: scale(1.05);
 }
