@@ -73,6 +73,7 @@ body {
   border-radius: 0.5rem;
   transition: 0.4s;
   cursor: pointer;
+  z-index: 2;
 }
 
 .slider:before {
@@ -85,10 +86,11 @@ body {
   background-color: #384b70;
   border-radius: 0.4rem;
   transition: 0.4s;
+  z-index: 3;
 }
 
 input:checked + .slider {
-  background-color: #75c978;
+  background-color: #ccc;
 }
 
 input:checked + .slider:before {
@@ -96,6 +98,7 @@ input:checked + .slider:before {
 }
 
 .slider-text {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
@@ -103,12 +106,13 @@ input:checked + .slider:before {
   color: #fff;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 .slider-text:first-child {
-  left: 5px;
+  left: 3.6rem;
 }
 
 .slider-text:last-child {
-  right: 5px;
+  right: 3.6rem;
 }
