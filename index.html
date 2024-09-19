@@ -11,9 +11,17 @@
       <div class="content">
         <img src="/images/bulb-off.png" alt="Light Bulb" class="light-bulb">
       </div>
-      <button class="btn" onclick="btnStatus()">
-        <span class="btn-text">OFF</span>
-      </button>
+      <label class="switch" onclick="btnStatus()">
+          <input type="checkbox">
+          <span class="slider">
+            <div class="slider-text-container">
+              <div class="slider-text">
+                <p>ON</p>
+                <p>OFF</p>
+              </div>
+            </div>
+          </span>
+      </label>
     </div>
     <script src="scripts.js"></script>
   </body>
