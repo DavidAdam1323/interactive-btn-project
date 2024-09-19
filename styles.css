@@ -20,7 +20,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: #222;
+  background: rgb(34, 34, 34);
 }
 
 #main-container {
@@ -45,7 +45,7 @@ body {
   font-size: 4rem;
   border: none;
   border-radius: 0.5rem;
-  background: #222;
+  background: rgb(9, 8, 6);
 }
 
 .light-bulb {
