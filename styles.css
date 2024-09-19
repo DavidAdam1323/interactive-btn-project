@@ -20,7 +20,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: rgb(34, 34, 34);
+  background: #BAD7E9;
 }
 
 #main-container {
@@ -33,6 +33,7 @@ body {
   border: none;
   border-radius: 0.5rem;
   background: #384b70;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content {
