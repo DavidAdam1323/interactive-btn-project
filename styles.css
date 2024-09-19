@@ -45,7 +45,12 @@ body {
   font-size: 4rem;
   border: none;
   border-radius: 0.5rem;
-  background: #fcfaee;
+  background: #222;
+}
+
+.light-bulb {
+  width: 18rem;
+  height: auto;
 }
 
 .btn {
