@@ -9,20 +9,23 @@
   <body>
     <div id="main-container">
       <div class="content">
-        <img src="/images/bulb-off.png" alt="Light Bulb" class="light-bulb">
+        <img src="/images/bulb-off.png" alt="Light Bulb" class="light-bulb" />
       </div>
-      <label class="switch" onclick="btnStatus()">
-          <input type="checkbox">
-          <span class="slider">
-            <div class="slider-text-container">
-              <div class="slider-text">
-                <p>ON</p>
-                <p>OFF</p>
-              </div>
-            </div>
-          </span>
+
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="toggle-switch"
+          onclick="btnStatus()"
+          aria-label="Toggle Light"
+        />
+        <span class="slider">
+          <span class="slider-text">ON</span>
+          <span class="slider-text">OFF</span>
+        </span>
       </label>
     </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@ html {
 *,
 *::before,
 *::after {
-  font-family: Tahoma, sans-serif;
+  font-family: "Tahoma", sans-serif;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -15,12 +15,11 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  height: 100vh;
   background: #bad7e9;
+  margin: 0;
 }
 
 #main-container {
@@ -28,99 +27,88 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 20rem;
-  height: 30rem;
-  border: none;
-  border-radius: 0.5rem;
+  width: 22rem;
+  height: 32rem;
   background: #384b70;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 15rem;
   height: 18rem;
-  font-size: 4rem;
-  border: none;
   border-radius: 0.5rem;
-  background: rgb(9, 8, 6);
+  background-color: rgb(9, 8, 6);
 }
 
 .light-bulb {
-  width: 18rem;
+  width: 15rem;
   height: auto;
 }
 
-/* The switch - the box around the slider */
-
+/* Switch Styles */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 15rem;
+  height: 4rem;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
+  border-radius: 0.5rem;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .slider:before {
-  position: absolute;
   content: "";
-  height: 28px;
-  width: 28px;
-  left: 3px;
-  bottom: 3px;
+  position: absolute;
+  height: 3.6rem;
+  width: 7.5rem;
+  left: 0.1875rem;
+  bottom: 0.1875rem;
   background-color: #384b70;
-  -webkit-transition: 0.4s;
+  border-radius: 0.4rem;
   transition: 0.4s;
 }
 
-/* input:checked + .slider {
-  background-color: #2196f3;
+input:checked + .slider {
+  background-color: #75c978;
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-} */
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-.slider-text-container {
-  display: flex;
-  width: 60px;
-  height: 34px;
-  flex-direction: column;
-  justify-content: center;
+  transform: translateX(7.1rem);
 }
 
 .slider-text {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  width: 60px;
-  padding: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-text:first-child {
+  left: 5px;
+}
+
+.slider-text:last-child {
+  right: 5px;
 }
