@@ -35,11 +35,25 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
-  padding: 1.5rem;
+  font-size: 3rem;
+  padding: 1.5rem 0;
+}
+
+.bulb-icon {
+  padding: 0 0 0 0.7rem  ;
+  width: auto;
+  height: 3rem;
 }
 
 h4 {
+  font-size: 1.21rem;
   color: #bad7e9;
 }
 
@@ -95,6 +109,7 @@ h4 {
   background-color: #384b70;
   border-radius: 0.4rem;
   transition: 0.4s;
+  box-shadow: -6px -6px 6px #2d3e5f inset, 6px 6px 6px #2d3e5f inset;
   z-index: 3;
 }
 
@@ -113,15 +128,11 @@ input:checked + .slider:before {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  width: 100%;
+  width: 50%;
   text-align: center;
   z-index: 1;
 }
 
 .slider-text:first-child {
-  left: 3.6rem;
-}
-
-.slider-text:last-child {
-  right: 3.6rem;
+  left: 7.6rem;
 }
