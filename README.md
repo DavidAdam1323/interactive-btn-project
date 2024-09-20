@@ -8,7 +8,7 @@ Check out the live demo [here](https://davidadam1323.github.io/interactive-btn-p
 
 ## Preview
 
-![Project Preview](path-to-your-image)
+![Project Preview](images/1.png)
 
 ## Features
 
