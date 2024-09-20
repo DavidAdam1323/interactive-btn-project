@@ -35,6 +35,17 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: -6px -6px 6px #2d3e5f inset, 6px 6px 6px #2d3e5f inset;
+}
+
 .title-container {
   display: flex;
   justify-content: center;
@@ -47,7 +58,7 @@ body {
 }
 
 .bulb-icon {
-  padding: 0 0 0 0.7rem  ;
+  padding: 0 0 0 0.7rem;
   width: auto;
   height: 3rem;
 }
@@ -96,6 +107,7 @@ h4 {
   border-radius: 0.5rem;
   transition: 0.4s;
   cursor: pointer;
+  box-shadow: -3px -3px 5px #6d6d6d inset, 6px 6px 6px #b8b8b8 inset;
   z-index: 2;
 }
 
@@ -109,7 +121,7 @@ h4 {
   background-color: #384b70;
   border-radius: 0.4rem;
   transition: 0.4s;
-  box-shadow: -6px -6px 6px #2d3e5f inset, 6px 6px 6px #2d3e5f inset;
+  box-shadow: -6px -6px 6px #2d3e5f inset, 6px 6px 6px #405887 inset;
   z-index: 3;
 }
 

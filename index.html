@@ -9,21 +9,23 @@
   <body>
     <div class="title-container">
       <h1 class="title">Bright Ideas</h1>
-      <img src="/images/bulb-icon.png" alt="Bulb Icon" class="bulb-icon">
+      <img src="/images/bulb-icon.png" alt="Bulb Icon" class="bulb-icon" />
     </div>
     <div id="main-container">
-      <h4>The Light Toggle Project</h4>
-      <div class="content">
-        <img src="/images/bulb-off.png" alt="Light Bulb" class="light-bulb" />
-      </div>
+      <div class="inner-container">
+        <h4>The Light Toggle Project</h4>
+        <div class="content">
+          <img src="/images/bulb-off.png" alt="Light Bulb" class="light-bulb" />
+        </div>
 
-      <label class="switch">
-        <input type="checkbox" onclick="btnStatus()"/>
-        <span class="slider">
-          <span class="slider-text">ON</span>
-          <span class="slider-text">OFF</span>
-        </span>
-      </label>
+        <label class="switch">
+          <input type="checkbox" onclick="btnStatus()" />
+          <span class="slider">
+            <span class="slider-text">ON</span>
+            <span class="slider-text">OFF</span>
+          </span>
+        </label>
+      </div>
     </div>
 
     <script src="scripts.js"></script>
