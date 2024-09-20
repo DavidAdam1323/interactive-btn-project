@@ -32,6 +32,7 @@ body {
   height: 32rem;
   background: #384b70;
   border-radius: 0.5rem;
+  animation: fade-up 0.5s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
@@ -50,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-down 0.5s;
 }
 
 .title {
@@ -147,4 +149,27 @@ input:checked + .slider:before {
 
 .slider-text:first-child {
   left: 7.6rem;
+}
+
+/* Animation */
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
